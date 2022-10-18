@@ -6,7 +6,7 @@ version: "3.7"
 
 x-app-defaults: &app-defaults
   restart: unless-stopped
-  # image: listmonk/listmonk:latest
+  image: listmonk/listmonk:latest
   ports:
     - "9000:9000"
   networks:
@@ -21,7 +21,7 @@ x-db-defaults: &db-defaults
   networks:
     - listmonk
   environment:
-    - POSTGRES_PASSWORD=listmonk
+    - POSTGRES_PASSWORD=hbQZHIrs2KBsa
     - POSTGRES_USER=listmonk
     - POSTGRES_DB=listmonk
   restart: unless-stopped
